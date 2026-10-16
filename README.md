@@ -11,6 +11,12 @@ npm run check   # kiểm tra mọi thư viện đã cài đúng
 
 Cần Node.js 18 trở lên.
 
+## Edit một video
+
+1. Chép video vào `public/input.mp4`.
+2. Sửa nội dung trong `src/EditVideo.tsx` (mẫu có sẵn: phát video gốc và chèn tiêu đề động).
+3. Xem trước: `npm run studio`. Xuất file: `npm run render EditVideo out/video.mp4`.
+
 ## Các thư viện đã cài (20 repo)
 
 | Lớp | Repo | Cài dưới dạng |
