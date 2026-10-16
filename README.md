@@ -11,6 +11,17 @@ npm run check   # kiểm tra mọi thư viện đã cài đúng
 
 Cần Node.js 18 trở lên.
 
+### Cài trên Windows (ví dụ `D:\AI Edit Video`)
+
+1. Cài [Node.js LTS](https://nodejs.org), [Git](https://git-scm.com/download/win) và (nếu cần âm thanh NinjaFight) [Python 3](https://www.python.org/downloads/) — khi cài Python nhớ tick **Add python.exe to PATH**.
+2. Mở PowerShell và tải mã nguồn:
+   ```powershell
+   cd D:\
+   git clone https://github.com/minhnd789/tool-veo.git "AI Edit Video"
+   ```
+3. Mở thư mục `D:\AI Edit Video` và nhấp đúp `cai-dat-windows.bat`.
+4. Chạy `npm run studio` trong thư mục đó, trình duyệt sẽ mở Remotion Studio.
+
 ## Edit một video
 
 1. Chép video vào `public/input.mp4`.

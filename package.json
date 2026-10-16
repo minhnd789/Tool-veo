@@ -50,6 +50,6 @@
     "render": "remotion render src/index.ts",
     "typecheck": "tsc -p .",
     "captions": "node scripts/transcribe.mjs",
-    "fight:sfx": "python3 scripts/fight_sfx.py"
+    "fight:sfx": "node scripts/fight-sfx.mjs"
   }
 }
