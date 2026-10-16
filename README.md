@@ -17,6 +17,17 @@ Cần Node.js 18 trở lên.
 2. Sửa nội dung trong `src/EditVideo.tsx` (mẫu có sẵn: phát video gốc và chèn tiêu đề động).
 3. Xem trước: `npm run studio`. Xuất file: `npm run render EditVideo out/video.mp4`.
 
+## Cảnh đánh nhau NinjaFight
+
+Video 30 giây (1920×1080) hai nhân vật chibi đánh nhau, dựng hoàn toàn bằng code trong `src/fight/`:
+intro VS, 3 lần chém, hoả độn cầu lửa, Chidori, bầy quạ, combo 12 hit, đối chưởng lửa với sét.
+
+1. Đặt ảnh nhân vật PNG đã tách nền vào `public/fight/itachi.png` và `public/fight/sasuke.png`.
+2. Tạo âm thanh: `npm run fight:sfx` (cần Python 3 và numpy).
+3. Xuất video: `npm run render NinjaFight out/fight.mp4`.
+
+Kịch bản (vị trí, mốc thời gian từng đòn) nằm trong `src/fight/timeline.ts`; hiệu ứng nằm trong `src/fight/Effects.tsx`.
+
 ## Phụ đề tự động (Whisper)
 
 ```bash
