@@ -17,6 +17,20 @@ Cần Node.js 18 trở lên.
 2. Sửa nội dung trong `src/EditVideo.tsx` (mẫu có sẵn: phát video gốc và chèn tiêu đề động).
 3. Xem trước: `npm run studio`. Xuất file: `npm run render EditVideo out/video.mp4`.
 
+## Phụ đề tự động (Whisper)
+
+```bash
+npm run captions public/input.mp4          # tiếng Việt, model small
+npm run captions public/input.mp4 en base  # đổi ngôn ngữ / model
+```
+
+Script dùng [whisper.cpp](https://github.com/ggerganov/whisper.cpp) chạy trên CPU. Lần đầu chạy,
+nó tự tải và build whisper.cpp vào thư mục `whisper.cpp/`, rồi tải model từ `huggingface.co`.
+Kết quả là `public/<tên>.captions.json` (để chèn phụ đề động bằng Remotion) và `public/<tên>.srt`.
+
+Model: `tiny`, `base`, `small` (mặc định), `medium`, `large-v3-turbo`. Model càng lớn thì càng chính
+xác nhưng chạy càng lâu.
+
 ## Các thư viện đã cài (20 repo)
 
 | Lớp | Repo | Cài dưới dạng |

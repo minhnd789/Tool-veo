@@ -12,7 +12,9 @@
     "@react-three/fiber": "^9.8.2",
     "@react-three/postprocessing": "^3.2.0",
     "@react-three/rapier": "^2.2.0",
+    "@remotion/captions": "4.0.535",
     "@remotion/cli": "4.0.535",
+    "@remotion/install-whisper-cpp": "4.0.535",
     "@remotion/media": "4.0.535",
     "@remotion/player": "4.0.535",
     "@rive-app/canvas": "^2.44.2",
@@ -46,6 +48,7 @@
     "check": "node scripts/check-install.mjs",
     "studio": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts",
-    "typecheck": "tsc -p ."
+    "typecheck": "tsc -p .",
+    "captions": "node scripts/transcribe.mjs"
   }
 }
